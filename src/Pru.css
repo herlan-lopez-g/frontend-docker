@@ -1,0 +1,104 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.nosotros {
+    text-align: center;
+    padding: 50px;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.nosotros-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: rgba(47, 46, 46, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    animation: nosotros 3s ease-in-out;
+    overflow-y: auto;
+}
+
+h2 {
+    color: #dfcd00;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.intro-text {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.team {
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    color: #dfcd00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.member-photo:hover {
+    transform: scale(1.1);
+}
+
+@keyframes nosotros {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
